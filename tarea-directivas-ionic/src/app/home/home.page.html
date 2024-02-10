@@ -34,7 +34,37 @@
       <ion-card-title>Caso 3</ion-card-title>
       <ion-input [(ngModel)]="PhoneNumber">Ingrese el número de teléfono:</ion-input>
       <p>{{PhoneNumber}}</p>
+    </ion-card>
+
+    <ion-card>
+      <!-- Caso número cuatro -->
+      <ion-card-title>Caso 4</ion-card-title>
+      <div id="txt" [ngClass]="{'aprobado': nota_alumnos, 'reprobado': !nota_alumnos}">
+        {{nota}}
+      </div>
+    </ion-card>
+
+    <ion-card>
+      <!-- Caso número cinco -->
+      <ion-card-title>Caso 5</ion-card-title>
+      <ion-item [ngStyle]="{'color': hexadecimal}">Hola Mundo</ion-item>
+    </ion-card>
+
+    <ion-card>
+      <!-- Caso número seis -->
+      <ion-card-title>Caso 6</ion-card-title>
+      
+      <div [ngSwitch]="colorButton">
+        <ion-button *ngSwitchCase="'primary'">Botón Primario</ion-button>
+        <ion-button *ngSwitchCase="'dark'">Botón Oscuro</ion-button>
+        <ion-button *ngSwitchCase="'danger'">Botón de amarillo</ion-button>
+        <ion-button *ngSwitchDefault>Botón Predeterminado</ion-button>
+      </div>
+        
+      
+      
       
     </ion-card>
+    
   </div>
 </ion-content>

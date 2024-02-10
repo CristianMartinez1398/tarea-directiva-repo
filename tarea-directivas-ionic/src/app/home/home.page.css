@@ -25,6 +25,11 @@
 #container a {
   text-decoration: none;
 }
+
+#txt{
+  color: black;
+}
+
 :host{
   ion-input{
     border-style: groove;
