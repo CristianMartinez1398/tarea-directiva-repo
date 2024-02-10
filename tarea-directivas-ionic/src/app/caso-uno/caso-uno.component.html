@@ -1,3 +1,29 @@
-<p>
-  caso-uno works!
-</p>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Directivas Ionic
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Directivas Ionic</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-button routerLink="/Caso-dos" routerDirection="root">Siguiente caso 2</ion-button>
+    <ion-card>
+      <!-- Caso número uno -->
+      <ion-card-title>Caso 1</ion-card-title>
+      <ion-input [value]="numero"></ion-input>
+      <ion-item *ngIf="numero >= 18">Felicidades, ya eres mayor de edad</ion-item>
+      <ion-button (click)="Contador()">Contador</ion-button>
+    </ion-card>
+    
+  </div>
+</ion-content>
+
+

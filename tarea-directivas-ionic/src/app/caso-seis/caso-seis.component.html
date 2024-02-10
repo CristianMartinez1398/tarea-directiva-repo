@@ -1,3 +1,47 @@
-<p>
-  caso-seis works!
-</p>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Directivas Ionic
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Directivas Ionic</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-button routerLink="/home" routerDirection="root">Inicio</ion-button>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <ion-card>
+      <!-- Caso número seis -->
+      <ion-card-title>Caso 6</ion-card-title>
+      
+      <div [ngSwitch]="colorButton">
+        <ion-button *ngSwitchCase="'primary'">Botón Primario</ion-button>
+        <ion-button *ngSwitchCase="'dark'">Botón Oscuro</ion-button>
+        <ion-button *ngSwitchCase="'danger'">Botón de amarillo</ion-button>
+        <ion-button *ngSwitchDefault>Botón Predeterminado</ion-button>
+      </div>
+        
+      
+      
+      
+    </ion-card>
+
+    
+    
+  </div>
+</ion-content>
